@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<form>
+	<fieldset name="default"
+		label="COM_CAN_REGISTRATION_DEFAULT_LABEL"
+	>
+
+		<field name="spacer" type="spacer" class="text"
+				label="COM_CAN_REGISTER_REQUIRED"
+			/>
+
+		<field name="name" type="text"
+			description="COM_CAN_REGISTER_NAME_DESC"
+			filter="string"
+			label="COM_CAN_REGISTER_NAME_LABEL"
+			message="COM_CAN_REGISTER_NAME_MESSAGE"
+			required="true"
+			size="30"
+		/>
+
+		<field name="username" type="text"
+			class="validate-username"
+			description="COM_CAN_DESIRED_USERNAME"
+			filter="username"
+			label="COM_CAN_REGISTER_USERNAME_LABEL"
+			message="COM_CAN_REGISTER_USERNAME_MESSAGE"
+			required="true"
+			size="30"
+			validate="username"
+		/>
+
+		<field name="password1" type="password"
+			autocomplete="off"
+			class="validate-password"
+			description="COM_CAN_DESIRED_PASSWORD"
+			field="password2"
+			filter="raw"
+			label="COM_CAN_REGISTER_PASSWORD1_LABEL"
+			message="COM_CAN_REGISTER_PASSWORD1_MESSAGE"
+			required="true"
+			size="30"
+			validate="equals"
+		/>
+
+		<field name="password2" type="password"
+			autocomplete="off"
+			class="validate-password"
+			description="COM_CAN_REGISTER_PASSWORD2_DESC"
+			filter="raw"
+			label="COM_CAN_REGISTER_PASSWORD2_LABEL"
+			message="COM_CAN_REGISTER_PASSWORD2_MESSAGE"
+			required="true"
+			size="30"
+		/>
+
+		<field name="email1" type="email"
+			description="COM_USERS_REGISTER_EMAIL1_DESC"
+			field="id"
+			filter="string"
+			label="COM_CAN_REGISTER_EMAIL1_LABEL"
+			message="COM_CAN_REGISTER_EMAIL1_MESSAGE"
+			required="true"
+			size="30"
+			unique="true"
+			validate="email"
+		/>
+
+		<field name="email2" type="email"
+			description="COM_CAN_REGISTER_EMAIL2_DESC"
+			field="email1"
+			filter="string"
+			label="COM_CAN_REGISTER_EMAIL2_LABEL"
+			message="COM_CAN_REGISTER_EMAIL2_MESSAGE"
+			required="true"
+			size="30"
+			validate="equals"
+		/>
+		<field name="nghenghiep" type="text"
+			class="validate-username"
+			description="COM_CAN_DESIRED_NGHENGHIEP"
+			filter="nghenghiep"
+			label="COM_CAN_REGISTER_NGHENGHIEP_LABEL"
+			message="COM_CAN_REGISTER_NGHENGHIEP_MESSAGE"
+			required="true"
+			size="30"
+			validate="nghenghiep"
+		/>
+		<field name="ngoaingu" type="text"
+			class="validate-username"
+			description="COM_CAN_DESIRED_NGOAINGU"
+			filter="ngoaingu"
+			label="COM_CAN_REGISTER_NGOAINGU_LABEL"
+			message="COM_CAN_REGISTER_NGOAINGU_MESSAGE"
+			required="true"
+			size="30"
+			validate="ngoaingu"
+		/>
+		<field name="sinhnhat" type="calendar"
+			class="validate-username"
+			description="COM_CAN_DESIRED_SINHNHAT"
+			filter="sinhnhat"
+			label="COM_CAN_REGISTER_SINHNHAT_LABEL"
+			message="COM_CAN_REGISTER_SINHNHAT_MESSAGE"
+			required="true"
+			size="30"
+			validate="sinhnhat"
+		/>
+		<field
+			name="captcha"
+			type="captcha"
+			label="COM_CAN_CAPTCHA_LABEL"
+			description="COM_CAN_CAPTCHA_DESC"
+			validate="captcha"
+		/>
+	</fieldset>
+</form>
